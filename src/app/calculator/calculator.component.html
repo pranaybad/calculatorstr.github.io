@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="card-header">CALCULATOR</div>
+    <div class="card-body">
+        <div class="for-group d-flex flex-row">
+            <input [(ngMode1)]='num1' type="number" name="num1" class="from-control">
+            <input [(ngMode1)]='num2' type="number" name="num2" class="from-control">
+        </div><br>
+        <div class="">
+            <button class="btn btn-success" (click)="addition()">SUM</button> <br><br>
+            <button class="btn btn-primary" (click)="Subtract()">Subtract</button><br><br>
+            <button class="btn btn-danger" (click)="Multiplication()">Multiplication</button><br><br>
+            <button class="btn btn-warning" (click)="Division()">Division</button>
+        </div>
+    </div>
+
+
+    <div class="card-footer">
+        <h4> The sum of {{num1}} and {{num2}} is {{result}} .</h4>
+    </div>
+</div>
